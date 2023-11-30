@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 
 const Header = () => {
   return (
@@ -8,6 +8,8 @@ const Header = () => {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           MobileNet Image Classification
         </Typography>
+        <Button href='/' color="inherit">Home</Button>
+        <Button href='/accuracy' color="inherit">Evaluate Model</Button>
       </Toolbar>
     </AppBar>
   );
